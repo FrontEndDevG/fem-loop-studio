@@ -6,8 +6,3 @@ hamburger.addEventListener("click", function () {
   menu.classList.toggle("active");
 });
 
-const greet = function () {
-  console.log("Hello world");
-};
-
-greet();
