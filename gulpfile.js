@@ -35,11 +35,13 @@ function jsTask() {
 }
 
 function browsersyncServe(cb) {
-  browsersync.init({
-    server: {
-      baseDir: ".",
-    },
-  });
+  if (process.env.ENABLE_BROWSERSYNC === "true") {
+    browsersync.init({
+      server: {
+        baseDir: ".",
+      },
+    });
+  }
   cb();
 }
 
