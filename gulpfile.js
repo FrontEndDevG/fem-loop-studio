@@ -35,9 +35,7 @@ function jsTask() {
 
 function browsersyncServe(cb) {
   browsersync.init({
-    server: {
-      baseDir: ".",
-    },
+    server: "./",
     open: false,
   });
   cb();
