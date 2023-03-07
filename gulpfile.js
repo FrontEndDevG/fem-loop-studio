@@ -38,6 +38,7 @@ function browsersyncServe(cb) {
     server: {
       baseDir: ".",
     },
+    open: false,
   });
   cb();
 }
