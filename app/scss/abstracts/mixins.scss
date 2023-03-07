@@ -1,0 +1,42 @@
+// BREAKPOINTS MANAGER
+$breakpoints-mob: (
+  "sl": "22.437em",
+  // 359px
+  "md-tab": "37.437em",
+  // 599px
+  "md-port": "56.187em",
+  // 899px
+  "l": "74.937em",
+  // 1199px
+  "xl": "112.437em",
+  // 1799px
+);
+
+$breakpoints-desk: (
+  "sl": "22.5em",
+  // 360px
+  "md-tab": "37.5em",
+  // 600px
+  "md-port": "56.25em",
+  // 900px
+  "l": "75em",
+  // 1200px
+  "xl": "112.5em",
+  // 1800px
+);
+
+// BREAKPOITNS MIXINS
+// MOBILE-FIRST
+@mixin mobile($size) {
+  @media only screen and (min-width: map-get($breakpoints-mob, $size)) {
+    @content;
+  }
+}
+// DESKTOP-FIRST
+@mixin desktop($size) {
+  @media only screen and (max-width: map-get($breakpoints-desk, $size)) {
+    @content;
+  }
+}
+
+// FLEX-BOX PROPERTIES MANAGER

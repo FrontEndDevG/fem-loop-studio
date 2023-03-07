@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+dist
+README-template.md
+README.md
+style-guide.md

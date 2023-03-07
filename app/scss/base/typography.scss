@@ -1,0 +1,98 @@
+@use "../abstracts/" as *;
+body {
+  font-size: 1.5rem;
+  color: $color-gray;
+  font-family: $font-alata;
+  line-height: 1.7;
+
+  @include desktop(md-port) {
+    font-size: 1.3rem;
+  }
+
+  @media only screen and (min-width: 87.437em) {
+    font-size: 1.8rem;
+  }
+  @include mobile(xl) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 1.3rem;
+  }
+}
+
+.heading--1 {
+  color: $color-white;
+  font-size: 8.5rem;
+  line-height: 1;
+  font-family: $font-josefin;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  @media only screen and (max-width: 89.375em) {
+    font-size: 7rem;
+  }
+
+  @media only screen and (max-width: 74.375em) {
+    font-size: 6rem;
+  }
+
+  @media only screen and (max-width: 66.187em) {
+    font-size: 5rem;
+  }
+
+  @include desktop(md-port) {
+    font-size: 4rem;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    line-height: 1.2;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 2.8rem;
+  }
+}
+
+.heading--2 {
+  font-family: $font-josefin;
+  font-size: 5rem;
+  line-height: 1;
+  color: $color-black;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  @media only screen and (max-width: 89.375em) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: 87.437em) {
+    font-size: 3.5rem;
+  }
+  @media only screen and (max-width: 66.187em) {
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 2.5rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 2rem;
+  }
+  
+}
+
+.heading--3 {
+  color: $color-white;
+  font-size: 3rem;
+  line-height: 1;
+  font-family: $font-josefin;
+  text-transform: uppercase;
+  @include desktop(l) {
+    font-size: 2rem;
+  }
+}

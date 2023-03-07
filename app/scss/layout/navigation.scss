@@ -1,0 +1,61 @@
+@use "../abstracts/" as *;
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+
+  &__logo {
+    @include desktop(md-port) {
+      width: 12rem;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+    }
+
+    &-link {
+      color: $color-white;
+      font-size: 2rem;
+      transition: all 0.3s;
+      position: relative;
+      padding-bottom: 0.5em;
+
+      @media only screen and (max-width: 79.625em) {
+        font-size: 1.8rem;
+      }
+
+      @include desktop(md-port) {
+        font-size: 1.6rem;
+      }
+
+      @include mobile(xl) {
+        font-size: 2.2rem;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 2px;
+        left: 50%;
+        bottom: 0;
+        background-color: $color-white;
+        transition: all 0.2s;
+      }
+
+      &:hover::before {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}

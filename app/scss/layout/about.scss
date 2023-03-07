@@ -1,0 +1,58 @@
+@use "../abstracts/" as *;
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @media only screen and (max-width: 66.187em) {
+    position: unset;
+    align-items: center;
+    gap: 3em;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    gap: 2em;
+  }
+
+  @media only screen and (max-width: 46.187em) {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  &__hero {
+    flex: 0 0 80%;
+
+    @media only screen and (max-width: 66.187em) {
+      flex: 0 1 50%;
+    }
+
+    &-img {
+      width: 80%;
+
+      @media only screen and (max-width: 66.187em) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1;
+
+    background-color: $color-white;
+    padding: 5em 0 0 5em;
+
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+
+    @media only screen and (max-width: 71.812em) {
+      padding: 3.5em 0 0 3.5em;
+    }
+
+    @media only screen and (max-width: 66.187em) {
+        position: static;
+        padding: 0;
+      }
+  }
+}

@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 8em;
+
+  @include desktop(l) {
+    padding: 6em;
+  }
+
+  @media only screen and (max-width: 53.062em) {
+    padding: 4em;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 2em;
+  }
+}

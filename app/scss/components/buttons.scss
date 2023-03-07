@@ -1,0 +1,33 @@
+@use "../abstracts/" as *;
+.btn {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: $color-black;
+  border: 2px solid $color-dark-gray;
+  padding: 0.5em 2em;
+
+  letter-spacing: 3px;
+
+  transition: all 0.3s;
+
+  @include desktop(l) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding-inline: 1em;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 1rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-black;
+    border-color: $color-black;
+    color: $color-white;
+  }
+}

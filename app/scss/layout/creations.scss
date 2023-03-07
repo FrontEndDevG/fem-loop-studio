@@ -1,0 +1,23 @@
+@use "../abstracts/" as *;
+
+.creations {
+  width: 100%;
+  margin-top: 10em;
+
+  @media only screen and (max-width: 66.187em) {
+    margin-top: 5em;
+  }
+
+  @media only screen and (max-width: 43.75em) {
+    margin-top: 4em;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-right: auto;
+  }
+}
