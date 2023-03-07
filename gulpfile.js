@@ -6,6 +6,7 @@ const cssnano = require("cssnano");
 const babel = require("gulp-babel");
 const terser = require("gulp-terser");
 const browsersync = require("browser-sync").create();
+const dotenv = require("dotenv").config();
 
 // Use dart-sass for @use
 
