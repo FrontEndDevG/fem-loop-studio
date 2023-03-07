@@ -5,3 +5,9 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("active");
   menu.classList.toggle("active");
 });
+
+const greet = function () {
+  console.log("Hello world");
+};
+
+greet();
